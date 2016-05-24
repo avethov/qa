@@ -1,6 +1,7 @@
-from django.http import HttpRequest
+from django.http import HttpResponse
+
 
 def test(request,
          *args,
          **kwargs):
-    return HttpRequest('OK')
+    return HttpResponse('OK')

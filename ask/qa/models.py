@@ -2,11 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-class QuestionManager(models.Model):
-    def new():
+class QuestionManager(models.Manager):
+    def new(self):
         pass
 
-    def popular():
+    def popular(self):
         pass
 
 

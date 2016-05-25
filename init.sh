@@ -5,6 +5,7 @@ sudo rm -rf /etc/nginx/sites-enabled/default
 sudo /etc/init.d/nginx restart
 sudo /etc/init.d/mysql start
 mysql -uroot < /home/box/web/etc/stepic.sql
+/home/box/web/ask/manage.py syncdb
 sudo ln -sf /home/box/web/etc/gunicorn.qa /etc/gunicorn.d/ask
 sudo rm -rf /etc/gunicorn.d/*.example
 sudo /etc/init.d/gunicorn restart

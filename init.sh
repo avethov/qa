@@ -8,5 +8,5 @@ mysql -uroot < /home/box/web/etc/stepic.sql
 /home/box/web/ask/manage.py syncdb
 sudo ln -sf /home/box/web/etc/gunicorn.qa /etc/gunicorn.d/ask
 sudo rm -rf /etc/gunicorn.d/*.example
-cd ./web/ask
+cd ./ask
 gunicorn --bind 0.0.0.0:8000 ask.wsgi 

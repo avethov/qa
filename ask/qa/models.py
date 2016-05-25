@@ -3,10 +3,10 @@ from django.contrib.auth.models import User
 
 
 class QuestionManager(models.Model):
-    def new(self):
+    def new():
         pass
 
-    def popular(self):
+    def popular():
         pass
 
 

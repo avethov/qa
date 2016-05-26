@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Django sqlite3" uuid="b9076d60-a85a-4403-93f4-c67d6b39342f">
+      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Django default" uuid="450f1790-7256-4599-9efb-9d9317259cbd">
+      <secret-storage>memory</secret-storage>
+      <user-name>stepic</user-name>
+      <schema-pattern>ask.*</schema-pattern>
+      <default-schemas>ask.*</default-schemas>
+    </data-source>
+  </component>
+</project>

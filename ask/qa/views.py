@@ -24,6 +24,7 @@ def new_questions(request):
     questions = Question.objects.pagination(list,
                                             page)
 
+
     context = {
         'page': questions,
         'questions': questions.object_list,
@@ -57,9 +58,9 @@ def popular_questions(request):
 
 @require_GET
 def question_details(request,
-                     question_id):
+                     id):
     question = get_object_or_404(Question,
-                                 pk=question_id)
+                                 pk=id)
 
     context = {
         'question': question,

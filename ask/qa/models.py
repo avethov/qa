@@ -43,11 +43,11 @@ class Question(models.Model):
     objects = QuestionManager()
 
     def __str__(self):
-        return '%s' % self.title
+        return self.title
 
     def get_url(self):
         return reverse('question-details',
-                       args=(self.id,))
+                       kwargs={'id': str(22)})
 
 
 class Answer(models.Model):

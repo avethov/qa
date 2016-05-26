@@ -17,13 +17,13 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^$', 'qa.views.te),
+    url(r'^$', 'qa.views.test'),
     url(r'^admin/', admin.site.urls),
     url(r'^login/', 'qa.views.test'),
     url(r'^signup/', 'qa.views.test'),
     url(r'^ask/', 'qa.views.test'),
-    url(r'^popular/', 'qa.views.popular_questions', name='new_questions'),
+    url(r'^popular/', 'qa.views.popular_questions', name='popular_questions'),
     url(r'^new/', 'qa.views.new_questions', name='new_questions'),
-    url(r'^question/(?P<question_id>\d+)/$', 'qa.views.question_details', name='new_questions'),
+    url(r'^question/(?P<id>\d+)', 'qa.views.question_details', name='question_details'),
     url(r'^.+/', 'qa.views.test404'),
 ]

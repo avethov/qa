@@ -1,7 +1,7 @@
 import os
 import unittest
 import sys
-sys.path.append('/home/box/web/ask')
+sys.path.append('/home/soad/Programming/Projects/web/Django/ask')
 os.environ['DJANGO_SETTINGS_MODULE'] = 'ask.settings'
 from django.contrib.auth.models import User
 from django.db.models import Max

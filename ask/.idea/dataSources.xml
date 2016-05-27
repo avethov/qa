@@ -26,7 +26,7 @@
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/ask/settings.py</remarks>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/ask</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/stepic</jdbc-url>
       <explain-plan-config>
         <provider>com.intellij.database.plan.ExplainPlanProvider.NullExplainPlanProvider</provider>
       </explain-plan-config>

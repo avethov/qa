@@ -6,8 +6,8 @@ CONFIG = {
         '--bind=0.0.0.0:8000',
         '--workers=4',
         '--timeout=60',
-	'--error-logfile="/home/box/gunicorn_error.log"'
-	'--access-logfile="/home/box/gunicorn_access.log"'
+	'--error-logfile="/home/box/gunicorn_error.log"',
+	'--access-logfile="/home/box/gunicorn_access.log"',
         'ask.wsgi:application',
     ),
 }

@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse
 
 class QuestionManager(models.Manager):
     def new(self):
-        question_list = Question.objects.all().order_by('-added_at')
+        question_list = Question.objects.all().order_by('-id')
 
         return question_list
 
@@ -46,8 +46,8 @@ class Question(models.Model):
         return self.title
 
     def get_url(self):
-        return reverse('question-details',
-                       kwargs={'id': str(22)})
+        return reverse('qa.views.question_details',
+                       kwargs={'id': str(self.id)})
 
 
 class Answer(models.Model):

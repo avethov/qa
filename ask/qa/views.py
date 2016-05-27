@@ -18,11 +18,8 @@ def test404(request,
 @require_GET
 def new_questions(request):
     list = Question.objects.new()
-    page = request.GET.get('page', 1)
-
-    #if not page:
-    #    return HttpResponse('OK')
-
+    page = request.GET.get('page',
+                           1)
 
     questions = Question.objects.pagination(list,
                                             page)

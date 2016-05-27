@@ -17,7 +17,6 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
-    #url(r'^$', 'qa.views.test'),
     url(r'^$', 'qa.views.new_questions', name='new_questions'),
     url(r'^admin/', admin.site.urls),
     url(r'^login/', 'qa.views.test'),
